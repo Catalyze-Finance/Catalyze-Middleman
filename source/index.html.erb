@@ -1,10 +1,20 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Catalyze Finance - l'investissement au grand public
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
-</div>
+<!-- THIS IS THE BANNER WITH JUST THE LOGO -->
+<%= partial "banner", locals: { 
+  background_image: "http://unsplash.it/1000/1000", 
+  logo: true 
+} %>
+
+<!-- THIS IS THE BANNER WITH TEXT ON THE LEFT -->
+<%= partial "banner", locals: { 
+  background_image: "http://unsplash.it/1000/1000", 
+  logo: false, 
+  header: "# Notre Mission",
+  content: "rendre accessible au grand public l'investissement à haut rendement dans l'immobilier"
+  } %>
+
+<!-- THIS IS THE SIGNUP FORM FOR MAILCHIMP -->
+<%= partial "mail_sign_up" %>
