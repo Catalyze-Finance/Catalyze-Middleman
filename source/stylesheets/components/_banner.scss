@@ -1,27 +1,48 @@
-.banner {
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  .text-left {
-    max-width: 450px;
-    margin-left: 90px;
-    color: white;
-    h4 {
-      font-style: italic;
-    }
-    p {
-      font-size: 40px;
-      text-transform: uppercase;
-    }
+@media (max-width: 600px) {
+  .banner {
+    padding-top: 180px;
+    background-position: top;
   }
 }
 
-.banner-content-center {
-  justify-content: center;
+@media (min-width: 600px) {
+  .banner {
+    padding-top: 150px;
+  }
 }
 
-.banner-content-left {
-  justify-content: flex-start;
+
+.banner {
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  .text-left {
+    padding-right: 40px;
+    color: white;
+    font-weight: 600;
+    h4 {
+      font-style: italic;
+    }
+    @media (max-width: 600px) {
+      h4 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    @media (min-width: 600px) {
+      h4 {
+        font-style: 20px;
+      }
+      p {
+        font-size: 40px;
+      }
+    }
+    p {
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+    }
+  }
 }
