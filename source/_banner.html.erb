@@ -1,0 +1,20 @@
+<% if logo %>
+<!-- BANNER LOGO -->
+  <div class="banner banner-content-center" style="background-image:url(<%= background_image %>);">
+    <img src="http://unsplash.it/250/250" alt="" class="logo">
+  </div>
+<!-- BANNER LOGO END -->
+<% else %>
+<!-- BANNER TEXT -->
+  <div class="banner banner-content-left" style="background-image:url(<%= background_image %>);">
+    <div class="text-left">
+      <h4>
+        <%= header %>
+      </h4>
+      <p>
+        <%= content %>
+      </p>
+    </div>
+  </div>
+<!-- BANNER TEXT END -->
+<% end %>
